@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Practice Hub </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div id="login-page" class="card">
+        <h1>MATH HUB</h1>
+        <p>Enter Your Name To Start</p>
+        <input type="text" id="student-name" placeholder="Your Name Here...">
+        <button onclick="handlelogin()">Login To Dashboard</button>
+    </div>
+
+    <div id="dashboard-page" class="full-screen-dashboard hidden">
+        <div class="dashboard-header">
+            <h2 id="welcome-msg">WELCOME BACK</h2>
+            <button onclick="startquiz()">Start New Test</button>
+        </div>
+        
+        <div class="dashboard-body">
+            <h3>Your Performance History</h3>
+            <div id="score-history-grid" class="history-grid">
+                </div>
+        </div>
+    </div>
+
+    <div id="quiz-page" class="quiz-interface-wrapper hidden">
+        <div class="timer-bar">Time Remaining: <span id="timer">60:00</span></div>
+        
+        <div id="question-container" class="card">
+            </div>
+        
+        <div class="nav-btns">
+            <button id="prev-btn" onclick="prevquestion()">Back</button>
+            <button id="next-btn" onclick="nextquestion()">Next</button>
+            <button id="submit-btn" class="hidden" onclick="submitquiz()">Finish And Submit</button>
+        </div>
+    </div>
+
+    <div id="results-page" class="card hidden">
+        <h1>Test Session Complete!</h1>
+        <h2 id="final-score">Percentage Score: 0%</h2>
+        <p id="grade-comment"></p>
+        <button onclick="backtodashboard()">Return To Dashboard</button>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
