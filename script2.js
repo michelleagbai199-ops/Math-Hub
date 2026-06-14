@@ -24,7 +24,7 @@ function generatePureMathQuestions() {
         let num1 = Math.floor(Math.random() * 80) + 10; // pick number between 10-90
         let num2 = Math.floor(Math.random() * 15) + 1;  // pick number between 1-15
 
-        let questionText = `What Is The Value Of: ${num1} ${op} ${num2}?`;
+        let questionText = `What is The value of: ${num1} ${op} ${num2}?`;
         
         // computer automatically computes the string math expression down to a number
         let computedAnswer = eval(`${num1} ${op} ${num2}`);
@@ -73,7 +73,7 @@ function renderDashboardHistory() {
 // ROUTING CONTROLLERS: handles switching screens when logging in or clicking buttons
 function handlelogin() {
     const name = studentInput.value.trim();
-    if (name === "") return alert("Please Enter Your Name To Authenticate!");
+    if (name === "") return alert("Please Enter Your Name!");
     
     document.getElementById('welcome-msg').innerText = "WELCOME BACK, " + name.toUpperCase();
     loginPage.classList.add('hidden');
