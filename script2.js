@@ -59,7 +59,7 @@ function renderDashboardHistory() {
     let history = JSON.parse(localStorage.getItem('mathScores')) || [];
     
     if (history.length === 0) {
-        scoreHistoryGrid.innerHTML = "<p style='grid-column: 1/-1;'>No Practice Exam Logs Found. Start A New Session Below!</p>";
+        scoreHistoryGrid.innerHTML = "<p style='grid-column: 1/-1;'>No Practice Exam Logs Found. Start A New Session!</p>";
     } else {
         scoreHistoryGrid.innerHTML = history.map(item => `
             <div class="history-item-card">
