@@ -1,0 +1,173 @@
+body {
+    background-color: #FFF1F2; /* Soft pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Centered flashcard look for Login and Results */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(251, 113, 133, 0.2);
+    text-align: center;
+    width: 520px;
+    border: 2px solid #FECDD3;
+    box-sizing: border-box;
+}
+
+/* Outer wrapper for the quiz to position elements cleanly */
+.quiz-interface-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 520px;
+}
+
+/* Horizontal alignment layout for choices */
+.options-row-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Styling the answers into horizontal rectangular blocks */
+.choice-pill-label {
+    flex: 1;
+    background: #FFF9FA;
+    border: 2px solid #FECDD3;
+    border-radius: 12px;
+    padding: 12px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4C0519;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.2s ease;
+}
+
+.choice-pill-label:hover {
+    background: #FFE4E6;
+    border-color: #FB7185;
+}
+
+
+.full-screen-dashboard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF1F2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #FB7185;
+}
+
+.dashboard-body {
+    flex-grow: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+    overflow-y: auto;
+}
+
+/* Widescreen rectangular past score badges */
+.history-item-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #FECDD3;
+    box-shadow: 0 4px 15px rgba(251, 113, 133, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.history-item-card span {
+    font-size: 14px;
+    color: #881337;
+    margin-bottom: 5px;
+}
+
+.history-item-card strong {
+    font-size: 24px;
+    color: #E11D48;
+}
+
+.hidden { display: none !important; }
+
+h1, h2, h3 { 
+    color: #881337; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #FECDD3;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FB7185;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover { background-color: #E11D48; }
+
+.nav-btns { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+    width: 100%;
+    gap: 15px;
+}
+
+.timer-bar {
+    font-weight: bold;
+    font-size: 20px;
+    color: #E11D48;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
