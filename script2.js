@@ -17,7 +17,7 @@ const totalTestQuestions = 40;
 // MATH ENGINE: loops 40 times to build problems and calculate answers using eval()
 function generatePureMathQuestions() {
     let list = [];
-    const mathOperators = ['+', '-', '*','/'];
+    const mathOperators = ['+', '-', '*',];
 
     for (let i = 0; i < totalTestQuestions; i++) {
         let op = mathOperators[Math.floor(Math.random() * mathOperators.length)];
